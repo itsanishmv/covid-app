@@ -166,9 +166,7 @@ const Anchor = styled.button`
       
     }
   }
-
  
-  
 `
 function App() {
 
@@ -211,6 +209,7 @@ function App() {
       <H1> COVID19-VAX SLOTS</H1>
       
       <Formdata>
+
         <h3 style={{fontFamily:'helvatica',position:'fixed',transform: "translate(23px,-230px)"}}>Search for COVID-19 vaccine slots  </h3>
         <Form >
           <input type="date" onChange={(e) => setDate(e.target.value)} />
@@ -218,13 +217,15 @@ function App() {
           <button onClick={(e) => { e.preventDefault(); getinfo() }} disabled={disablebtn}>Search</button>
           
           <h4 style={{ position: 'fixed', transform: "translate(-100px,150px)" }}>
-           <li style={{listStyleType:"none"}}>Availbale -<p style={{ transform:"translate(110px,-30px)", backgroundColor:'green',borderRadius: "50%", height:"10px",width:"10px"}}></p> </li>  
+            <li style={{listStyleType:"none"}}>Availbale -<p style={{ transform:"translate(110px,-30px)", backgroundColor:'green',borderRadius: "50%", height:"10px",width:"10px"}}></p> </li>  
             <li style={{listStyleType:"none"}}>booked - <p style={{ transform:"translate(110px,-30px)", backgroundColor:'red',borderRadius: "50%", height:"10px",width:"10px"}}></p> </li>
           </h4>
         </Form>
+
         <Anchor><a href="https://selfregistration.cowin.gov.in/"> Book now</a>
-        <span>will redirect to the cowin-site</span>
+          <span>will redirect to the cowin-site</span>
         </Anchor>
+
       </Formdata>
 
       <Data>
